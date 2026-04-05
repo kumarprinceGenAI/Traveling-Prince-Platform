@@ -40,14 +40,26 @@ export default function PrivacyPolicy() {
           </p>
         </section>
 
-        <section className="space-y-6">
+        <section id="cookies" className="space-y-6 scroll-mt-32">
           <div className="flex items-center gap-4 text-white">
             <div className="p-3 bg-white/5 rounded-xl"><Database className="w-5 h-5 text-emerald-500" /></div>
-            <h2 className="text-2xl font-black tracking-tight">Cookies</h2>
+            <h2 className="text-2xl font-black tracking-tight">Cookies & Tracking</h2>
           </div>
           <p className="text-text-muted leading-relaxed font-medium">
-            We use small data files (cookies) to enhance your browsing experience. You can manage cookie preferences via your browser settings at any time.
+            We use small data files (cookies) to enhance your browsing experience, remember your preferences, and analyze our traffic. By using our site, you consent to our use of cookies.
           </p>
+          <div className="p-6 bg-white/5 rounded-2xl border border-white/5 space-y-4">
+             <h4 className="text-sm font-bold text-white uppercase tracking-widest">How to Manage Cookies</h4>
+             <p className="text-xs text-text-muted leading-relaxed">
+                Most web browsers allow you to control cookies through their settings. You can find instructions for your specific browser below:
+             </p>
+             <ul className="grid grid-cols-2 gap-4 text-[10px] font-black uppercase tracking-widest text-emerald-500/80">
+                <li className="hover:text-emerald-400 transition-colors cursor-pointer"><a href="https://support.google.com/chrome/answer/95647" target="_blank">Google Chrome</a></li>
+                <li className="hover:text-emerald-400 transition-colors cursor-pointer"><a href="https://support.apple.com/en-in/guide/safari/sfri11471/mac" target="_blank">Apple Safari</a></li>
+                <li className="hover:text-emerald-400 transition-colors cursor-pointer"><a href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop" target="_blank">Mozilla Firefox</a></li>
+                <li className="hover:text-emerald-400 transition-colors cursor-pointer"><a href="https://support.microsoft.com/en-us/windows/microsoft-edge-browsing-data-and-privacy-bb8174ba-9d73-dcf2-9b4a-c582b4e640dd" target="_blank">Microsoft Edge</a></li>
+             </ul>
+          </div>
         </section>
 
         <section className="space-y-6">
