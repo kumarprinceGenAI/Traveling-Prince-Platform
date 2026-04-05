@@ -40,7 +40,7 @@ export default function ContactPage() {
               GET YOUR FREE ACCESS KEY AT: https://web3forms.com/
               REPLACE 'YOUR_ACCESS_KEY' WITH YOUR ACTUAL KEY
             */}
-            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+            <input type="hidden" name="access_key" value="9de232f1-0086-47f0-a345-1cb6e3b8495c" />
             <input type="hidden" name="subject" value="New Contact from The Traveling Prince" />
             <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} />
 
