@@ -1,6 +1,7 @@
-import React from "react";
 import { Youtube, Play, Calendar, Share2, ArrowRight, Video, Compass } from "lucide-react";
 import Link from "next/link";
+
+export const dynamic = "force-dynamic";
 
 // Using the public RSS feed for YouTube channels (no API Key required for basic list)
 // Channel ID for @thetravelingprince4: UCj-3eEZyiTOuW8n2tB6DY4Q

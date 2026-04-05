@@ -13,6 +13,8 @@ import {
   RotateCcw
 } from "lucide-react";
 
+export const dynamic = "force-dynamic";
+
 async function getMetrics() {
   const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "https://travel-blog-generator.onrender.com";
   try {

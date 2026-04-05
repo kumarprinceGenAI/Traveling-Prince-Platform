@@ -4,6 +4,8 @@ import { Sparkles, Compass, Youtube, Instagram, Facebook, Anchor, ArrowUpRight }
 import Link from "next/link";
 import BlogSearch from "@/components/BlogSearch";
 
+export const dynamic = "force-dynamic";
+
 async function getAllBlogs() {
   const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "https://travel-blog-generator.onrender.com";
   try {

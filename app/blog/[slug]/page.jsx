@@ -3,6 +3,8 @@ import BlogContent from "@/components/BlogContent";
 import Link from "next/link";
 import { ArrowLeft, Share2, Facebook, Twitter, Ghost } from "lucide-react";
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "https://travel-blog-generator.onrender.com";
