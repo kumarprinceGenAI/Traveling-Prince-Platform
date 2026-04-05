@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-outfit: 'Outfit', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+body {
+  @apply bg-bg-dark text-text-main antialiased;
+  font-family: var(--font-inter);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit);
+}
+
+.prose-blog {
+  @apply max-w-[700px] mx-auto text-lg leading-relaxed text-slate-300;
+  font-family: var(--font-serif);
+}
+
+.prose-blog h1, 
+.prose-blog h2, 
+.prose-blog h3 {
+  @apply text-white mt-12 mb-6 font-bold;
+  font-family: var(--font-outfit);
+}
+
+.prose-blog h1 { @apply text-4xl lg:text-5xl; }
+.prose-blog h2 { @apply text-3xl lg:text-4xl; }
+.prose-blog h3 { @apply text-2xl lg:text-3xl; }
+
+.prose-blog p { @apply mb-6; }
+
+.prose-blog ul, 
+.prose-blog ol { @apply mb-8 ml-6 list-disc; }
+
+.prose-blog li { @apply mb-2; }
+
+.prose-blog img {
+  @apply w-full h-auto rounded-2xl my-10 shadow-2xl;
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+}
