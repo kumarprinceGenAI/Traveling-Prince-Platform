@@ -1,16 +1,62 @@
-# React + Vite
+# The Traveling Prince Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, production-ready content distribution engine for the "Traveling Prince" brand. Built for high-end travel storytelling, real-time adventure tracking, and cinematic media delivery.
 
-Currently, two official plugins are available:
+## 🏛️ System Architecture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 1. Frontend Architecture
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router) for hybrid static/dynamic rendering.
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) with a custom "Mission Control" glassmorphism design system.
+- **Icons**: [Lucide React](https://lucide.dev/) for consistent, lightweight vector iconography.
+- **Components**: Modular React architecture with a clear separation between Server-Side (SEO) and Client-Side (Interactive) components.
 
-## React Compiler
+### 2. Data Connectivity & API Layer
+- **Adventure Engine**: REST API integration (hosted on Render) that serves dynamically generated travel journals and itineraries.
+- **Cinema Gallery**: Real-time YouTube RSS feed integration for automated video content updates.
+- **Live Metrics**: `/metrics` dashboard providing real-time visibility into the backend blog generation engine.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 3. SEO & Production Infrastructure
+- **Dynamic Metadata**: Custom `generateMetadata` implementation for per-page unique SEO titles and social sharing markers.
+- **Search Engine Discovery**: Automated `sitemap.xml` and `robots.txt` generation.
+- **Serverless Communications**: Functional contact form powered by [Web3Forms](https://web3forms.com/).
+- **CI/CD**: Fully automated deployment pipeline via **GitHub** and **Vercel**.
 
-## Expanding the ESLint configuration
+## 🚀 Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Blog Discovery**: Client-side real-time search and 10-item pagination for the 200+ article archive.
+- **60/40 Hero Layout**: Performance-optimized hero section balancing featured content with personal branding.
+- **Prince's Cinema**: A theater-mode video gallery with curated playlist collections (Sacred Temples, Char Dham, etc.).
+- **Trust Suite**: Integrated legal infrastructure including FAQ, Privacy Policy, and Terms of Service.
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| **Language** | JavaScript (ES6+) |
+| **Logic** | React 19 / Next.js 15 |
+| **Styling** | Tailwind CSS 3.4 |
+| **Icons** | Lucide React |
+| **Deployment** | Vercel |
+| **Asset Mgmt** | Next.js Image Optimization |
+
+## 📦 Getting Started
+
+1. **Clone & Install**:
+   ```bash
+   git clone https://github.com/kumarprinceGenAI/Traveling-Prince-Platform.git
+   npm install
+   ```
+
+2. **Environment Setup**:
+   Create a `.env.local` file:
+   ```env
+   NEXT_PUBLIC_API_BASE_URL=https://travel-blog-generator.onrender.com
+   ```
+
+3. **Run Locally**:
+   ```bash
+   npm run dev
+   ```
+
+---
+**© 2026 The Traveling Prince | Built for the Great Indo-China Wanderlust.**
